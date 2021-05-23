@@ -21,20 +21,32 @@ class myapp extends StatelessWidget {
 
         ),
         body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+          child: Row(
             children: [
-              Text("Text Widget",style: TextStyle(
-                fontSize: 24,
-              ),),
+
               RaisedButton(onPressed: (){},
               child: Text(
-                "Raised Button"
-              ),)
+                "Raised Button1",
+                style: TextStyle(
+                  fontSize: 18
+                ),
+
+              ),),
+              RaisedButton(onPressed: (){},
+                child: Text(
+                  "Raised Button1",
+                  style: TextStyle(
+                      fontSize: 18
+                  ),
+
+                ),),
+          
+
+
             ],
           ),
         ),
+
       ),
     );
   }
